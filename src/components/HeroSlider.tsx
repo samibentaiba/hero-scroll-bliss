@@ -63,8 +63,8 @@ const HeroSlider = () => {
       <div className="absolute inset-0 bg-black bg-opacity-60 z-[-2]" />
       {/* Slide content */}
       {/* Navigation arrows */}
-      <div className="z-10 text-start flex max-w-[1920px] w-full justify-between items-center px-4 translate-x-[0%] ">
-        <div className="flex justify-between items-center w-[40rem] space-y-4">
+      <div className="z-10 text-start flex max-w-[1920px] w-full justify-between items-center  translate-x-[0%] ">
+        <div className="flex justify-between items-center gap-8 w-[40rem] space-y-4">
           <button
             onClick={prevSlide}
             className="rounded-full bg-black/50 p-4 text-white transition hover:bg-black/75"
