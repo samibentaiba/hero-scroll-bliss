@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="w-full bg-black px-6 py-4">
-      <div className="mx-auto max-w-7xl flex items-center justify-between">
+      <div className="mx-auto max-w-[1920px] flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/a5cfbf12-f8c9-40eb-b885-ce297ecee85d.png" 
+            src="/images/WhiteItc.svg" 
             alt="bsqux logo" 
             className="h-12"
           />
