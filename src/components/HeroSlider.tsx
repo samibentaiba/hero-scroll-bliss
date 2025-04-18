@@ -63,16 +63,21 @@ const HeroSlider = () => {
       <div className="absolute inset-0 bg-black bg-opacity-60 z-[-2]" />
       {/* Slide content */}
       {/* Navigation arrows */}
-      <div className="z-10 text-start flex max-w-[1920px] w-full justify-between items-center  translate-x-[0%] ">
-        <div className="flex justify-between items-center gap-8 w-[40rem] space-y-4">
-          <button
-            onClick={prevSlide}
-            className="rounded-full bg-black/50 p-4 text-white transition hover:bg-black/75"
-          >
-            <ChevronLeft size={50} />
-          </button>
+      <div className="z-10 text-start flex max-w-[1920px] w-full justify-between items-center translate-x-[0%] ">
+        <div className="flex justify-between items-center gap-8 max-w-[40rem] space-y-4">
+          <div className="px-6">
+            <button
+              onClick={prevSlide}
+              className="rounded-full bg-black/50 p-4 text-white transition hover:bg-black/75"
+            >
+              <ChevronLeft
+                size={50}
+                className=" md:w-auto lg:w-auto w-5 h-16 "
+              />
+            </button>
+          </div>
           <div className="flex flex-col gap-6 ">
-            <h1 className="text-4xl font-bold text-white w-[35rem] sm:text-6xl">
+            <h1 className="text-4xl font-bold text-white max-w-[35rem] sm:text-6xl">
               {slide.title}
             </h1>
             <p className="text-lg text-gray-200 sm:text-xl">{slide.subtitle}</p>
@@ -81,12 +86,17 @@ const HeroSlider = () => {
             </button>
           </div>
         </div>
-        <button
-          onClick={nextSlide}
-          className="rounded-full bg-black/50 p-4 text-white transition hover:bg-black/75"
-        >
-          <ChevronRight size={50} />
-        </button>
+        <div className="px-6">
+          <button
+            onClick={nextSlide}
+            className="rounded-full bg-black/50 p-4 text-white transition hover:bg-black/75"
+          >
+            <ChevronRight
+              size={50}
+              className=" md:w-auto lg:w-auto w-5 h-16 "
+            />
+          </button>
+        </div>
       </div>
 
       {/* Pagination dots */}
