@@ -1,27 +1,26 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-
 const slides = [
   {
     id: 1,
-    title: "O melhor fone",
-    subtitle: "Não perca essa oportunidade",
-    buttonText: "Colocar no carrinho",
+    title: "Level Up with ITC",
+    subtitle: "Join our vibrant community and explore the future of tech.",
+    buttonText: "Get Involved",
     image: "/images/itc-stairs.png",
   },
   {
     id: 2,
-    title: "Um belo celular",
-    subtitle: "Tenha mais destaque com a melhor tecnologia",
-    buttonText: "Quero saber mais",
+    title: "Tech Talks & Innovation",
+    subtitle: "Learn from industry leaders and student pioneers at USDB.",
+    buttonText: "Discover More",
     image: "/images/itc-talks-5th.png",
   },
   {
     id: 3,
-    title: "Bater papo",
-    subtitle: "Vamos para uma sala top!",
-    buttonText: "Bater um papo agora",
+    title: "Ideas Worth Sharing",
+    subtitle: "Collaborate, brainstorm, and bring your vision to life.",
+    buttonText: "Join the Conversation",
     image: "/images/sharing-ideas.png",
   },
 ];
@@ -86,7 +85,7 @@ const HeroSlider = () => {
           onClick={nextSlide}
           className="rounded-full bg-black/50 p-4 text-white transition hover:bg-black/75"
         >
-          <ChevronRight size={50}  />
+          <ChevronRight size={50} />
         </button>
       </div>
 
