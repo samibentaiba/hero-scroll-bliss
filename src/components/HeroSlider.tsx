@@ -72,7 +72,7 @@ const HeroSlider = () => {
             <ChevronLeft size={50} />
           </button>
           <div className="flex flex-col gap-6 ">
-            <h1 className="text-4xl font-bold text-white w-[30rem] sm:text-6xl">
+            <h1 className="text-4xl font-bold text-white w-[35rem] sm:text-6xl">
               {slide.title}
             </h1>
             <p className="text-lg text-gray-200 sm:text-xl">{slide.subtitle}</p>
